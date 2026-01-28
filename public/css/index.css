@@ -409,7 +409,7 @@ ul.experience-chart li {
     padding-left: 30px;
     border-left: 2px solid #6f6f6f;
     padding-bottom: 10px;
-    position: relative
+    position: relative;
 }
 
 ul.experience-chart li:last-child {
@@ -442,9 +442,14 @@ ul.experience-chart h3 {
     color: #4d4d4d
 }
 
+.single-experience-container {
+    display: flex;
+    justify-content:flex-start;
+}
+
 .single-experience {
     position: relative;
-    top: -2px
+    top: -2px;
 }
 /* Education */
 
