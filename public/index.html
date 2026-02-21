@@ -59,7 +59,7 @@
          
         --text-color-dark: #e4e6eb;
         --text-secondary-color-dark: #b0b3b8;
-        --text-link-color-dark: #ffffff;
+        --text-link-color-dark: #CD7161;
         --background-color-dark: #18191a;
         --secondary-background-color-dark: #212529;
         --primary-color-dark: #ffffff;
@@ -150,7 +150,8 @@
   <nav class="pt-3 navbar navbar-expand-lg animate">
     <div class="container-fluid mx-xs-2 mx-sm-5 mx-md-5 mx-lg-5">
         <a class="navbar-brand primary-font text-wrap" href="/">
-            <img src="sharonLogo.jpg" width="50" height="50" class="d-inline-block align-top"></a>
+            <img src="sharonLogo.jpg" width="50" height="50" class="d-inline-block align-top">
+        </a>
         <div>
           <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
             <svg aria-hidden="true" height="24" viewBox="0 0 16 16" width="24" data-view-component="true">
@@ -250,8 +251,8 @@
                     </div>
                 </div>
                 <div class="col-sm-12 col-md-12 col-lg-8 content">
-                    <p>I graduated Cum Laude from the University of Virginia in 2021 (wahoo wa)!</p>
-                    <p>I worked as a software engineer at AWS before pursuing a career and following my passion for games!</p>
+                    <p>I graduated Cum Laude from the University of Virginia in 2021 (wahoo wa) !</p>
+                    <p>I worked as a software engineer at AWS before pursuing a career in the game industry following my passion for games!</p>
                     <p>
                         I am currently an Associate Gameplay Engineer at <a href="https://www.midsummerstudios.com/">Midsummer Studios</a> working on an unannounced life sim project. 
                         
@@ -309,7 +310,7 @@
 
                                     <span>July 2024 - November 2025</span>
 
-                                    <p>I worked in a fast-paced startup environment with a tight-knit group of amazing people while learning a new game engine on <b>Project Burbank</b>. 
+                                    <p>I worked in a fast-paced startup environment with a tight-knit group of amazing people while learning Unreal Engine on <b>Project Burbank</b>. 
                                     </p>
                                     <p>Owned several <b>core gameplay systems</b> like Mood, Interactions, Character AI behavior, Weather, Pickups, Character Objectives, Character Experience, Cost/Reward Modifiers, Doorways that manage character entrances and exits in a scene, as well 
                                         Character Confessionals using proprietary software and <b>Flow Graph</b>.
@@ -340,9 +341,9 @@
                                     <span>January 2022 - July 2023</span>
                                 
                                     <p>I worked at AWS on the EC2 Edge Outpost team. <a href="https://aws.amazon.com/outposts/">Outposts</a> supplies infrastructure to businesses who want on-premises AWS services to reduce latency and fulfill data security requirements. 
-                                        Some notable public customers of the Outposts team are <a href="https://www.nasdaq.com/press-release/nasdaq-completes-migration-of-the-third-u.s.-market-to-aws-2023-11-14">Nasdaq</a>,
+                                        Some notable public customers of the Outposts team are the <a href="https://www.nasdaq.com/press-release/nasdaq-completes-migration-of-the-third-u.s.-market-to-aws-2023-11-14">Nasdaq</a>,
                                            <a href="https://aws.amazon.com/solutions/case-studies/fanduel-case-study/">FanDuel</a>,
-                                           <a href="https://d1.awsstatic.com/events/reinvent/2021/Riot_Games_at_the_edge_Launching_VALORANT_with_AWS_Outposts_GAM302.pdf">Riot - Valorant</a> (who now uses <a href="https://aws.amazon.com/about-aws/global-infrastructure/localzones/">Local Zones</a>).                                    
+                                           <a href="https://d1.awsstatic.com/events/reinvent/2021/Riot_Games_at_the_edge_Launching_VALORANT_with_AWS_Outposts_GAM302.pdf">Riot - Valorant</a> (who now uses <a href="https://aws.amazon.com/about-aws/global-infrastructure/localzones/">Local Zones</a>, a sister team).                                    
                                     </p>
                                     <p>I developed an automated testing stack using <b>AWS CloudFormation</b> to execute custom Bash scripts to heavily reduce manual test efforts.
                                     I implemented a <b>Route Table Compaction Log</b> that was part of a bigger initiative to enable partial updates to Outpost hardware making message processing up to <b>25% faster</b> for customers.
@@ -411,37 +412,38 @@
                                 <span class="badge badge-secondary">C++</span>
                                 <span class="badge badge-secondary">Perforce</span>
                             </div>
-                            <h5 class="card-title bg-transparent mt-1">Project Burbank</h5>
+                            <h3 class="card-title bg-transparent mt-1">Project Burbank</h3>
                             <div class="card-text bg-transparent secondary-font">
-                                Unreleased life sim game produced by Midsummer Studios.
+                                <p>Unreleased life sim game produced by Midsummer Studios.</p>
                             </div>
                         </div>
-                        <div class="card-footer py-3">
+                        <!-- <div class="card-footer py-3">
                             <a href="/posts/burbank" class="float-end btn btn-outline-info btn-sm">Check it Out</a>
-                        </div>
+                        </div> -->
                     </button>
                 </div>
-                <!-- <div class="col-lg-4 col-md-6 my-3">
-                    <div class="card my-3 h-100" title="Project Burbank">
+                <div class="col-lg-4 col-md-6 my-3">
+                    <button class="card my-3 h-100" title="Mark of the Beast" onclick="{
+                        window.location.href = '/posts/burbank'
+                    }">
                         <div class="card-head">
-                            <img class="card-img-top" src="fav.png" alt="Project Burbank">
+                            <img class="card-img-top" src="images/Burbank/BurbankCoverPhoto.png" alt="Project Burbank">
                         </div>
                         <div class="card-body bg-transparent p-3">
                             <div class="pb-2 bg-transparent">
-                                <span class="badge badge-secondary">Unreal Engine 5</span>
-                                <span class="badge badge-secondary">C++</span>
-                                <span class="badge badge-secondary">Perforce</span>
+                                <span class="badge badge-secondary">NESMaker</span>
                             </div>
-                            <h5 class="card-title bg-transparent mt-1">Personal Project</h5>
+                            <h3 class="card-title bg-transparent mt-1">Mark of the Beast</h3>
                             <div class="card-text bg-transparent secondary-font">
-                                Personal project I've been working on in my off time using Unreal Engine with some friends!
+                                <p>Todd Broadwater's NES emulated game released on steam: </p>
+                                <p>Two person project where I was the sole engineer for polish and bug fixes.</p>
                             </div>
                         </div>
-                        <div class="card-footer py-3">
+                        <!-- <div class="card-footer py-3">
                             <a href="/posts/burbank" class="float-end btn btn-outline-info btn-sm">Check it Out</a>
-                        </div>
-                    </div>
-                </div> -->
+                        </div> -->
+                    </button>
+                </div>
             </div>
             
         </div>
@@ -478,7 +480,8 @@
     </div>
   </div>
 </div>
-</footer><script src="/bootstrap-5/js/bootstrap.bundle.min.js"></script>
+</footer>
+<script src="/bootstrap-5/js/bootstrap.bundle.min.js"></script>
 <script>
     if (localStorage.getItem("pref-theme") === "dark") {
         document.documentElement.classList.add('dark');
