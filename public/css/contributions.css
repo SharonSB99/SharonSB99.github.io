@@ -55,6 +55,10 @@
     text-align: left;
 }
 
+.card-title {
+    text-align: left;
+}
+
 .card-body .pb-2 {
     display: flex;
     justify-content: flex-end;  
