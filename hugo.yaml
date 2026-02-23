@@ -1,8 +1,0 @@
-baseURL: "https://SharonSB99.github.io"
-languageCode: "en-us"
-title: "Sharon Bryant - Gameplay Engineer"
-theme: hugo-profile
-
-caches:
-  images:
-    dir: :cacheDir/images
