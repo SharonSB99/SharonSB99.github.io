@@ -96,8 +96,8 @@
             break;
         default:
             if (mediaQuery) {
-                document.documentElement.classList.add('dark');
-                document.body.classList.add('dark');
+                document.body.classList.remove('dark');
+                document.documentElement.classList.remove('dark');
             }
             break;
     }
