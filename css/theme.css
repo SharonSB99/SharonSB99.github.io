@@ -1,7 +1,7 @@
 
 :root {
-    --text-color: #000000;
-    --text-secondary-color: #000000;
+    --text-color: #3d3d3d;
+    --text-secondary-color: #3d3d3d;
     --text-link-color: #fff;
     --background-color: #eaedf0;
     --secondary-background-color: #64ffda1a;
@@ -34,7 +34,7 @@ body.light {
   pointer-events: none;
   
   background: 
-    url('../static/bgGridDarker.jpg') center center / cover no-repeat var(--background-color, #ffffff);
+    url('../static/gridBGDarkPink.jpg') center center / cover no-repeat var(--background-color, #ffffff);
 
     
 }
@@ -46,6 +46,6 @@ body.light {
       url('../static/ermEmote.png') 80% 50% / 80px no-repeat,
       /* Keep the bottom layer the same */
       linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)),
-      url('../static/bgGridDarker.jpg') center center / cover no-repeat var(--background-color, #ffffff);
+      url('../static/gridBGDarkPink.jpg') center center / cover no-repeat var(--background-color, #ffffff);
   }
 }
