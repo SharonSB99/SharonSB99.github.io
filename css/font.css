@@ -1,20 +1,32 @@
-
-/* Default font for body */
 body {
-    font-family: 'Blinker', serif !important;
+    font-family: 'Blinker', serif;
 }
 
-/* secondary font */
-.secondary-font, #secondary-font {
-    font-family: 'Blinker';
+.primary-font,
+#primary-font {
+    font-family: 'ADLaM Display', cursive;
 }
 
-/* primary font */
-.primary-font, #primary-font {
-    font-family: 'ADLaM Display';
+.secondary-font,
+#secondary-font {
+    font-family: 'Blinker', serif;
 }
 
-/* Default font */
-.default-font, #default-font {
-    font-family: "Roboto", sans-serif;
+.default-font,
+#default-font {
+    font-family: 'Roboto', sans-serif;
+}
+
+body.dark {
+    font-family: "Lora", serif;
+}
+
+body.dark .primary-font,
+body.dark #primary-font {
+   font-family: "Alata", sans-serif;
+}
+
+body.dark .secondary-font,
+body.dark #secondary-font {
+    font-family: "Lora", serif;
 }

@@ -3,25 +3,55 @@
     --text-color: #3d3d3d;
     --text-secondary-color: #3d3d3d;
     --text-link-color: #fff;
-    --background-color: #eaedf0;
-    --secondary-background-color: #64ffda1a;
     --primary-color: #fff;
     --secondary-color: #f8f9fa;
+
+    --text-color-dark: #343a40;
+    --text-secondary-color-dark: #6c757d;
+    --text-link-color-dark: #CD7161;
+    --primary-color-dark: #CD7161;
+    --secondary-color-dark: #f8f9fa;
 }
 
 html, body {
-    /* Use the variable as a fallback, but don't let it block the stickers */
-    background-color: var(--background-color); 
     margin: 0;
     padding: 0;
 }
 
-.light * {
-  background-color: transparent !important;
+.section-text {
+  display: none;
+}
+
+body.dark {
+  --text-color: var(--text-color-dark);
+  --text-secondary-color: var(--text-secondary-color-dark);
+  --text-link-color: var(--text-link-color-dark);
+  --primary-color: var(--primary-color-dark);
 }
 
 body.light {
   background-color: transparent;
+}
+
+/* Dark mode: solid background, no stickers */
+body.dark {
+  background-color: var(--secondary-color-dark);
+}
+
+body.dark .sticker-background {
+  display: none;
+}
+
+body.dark .section-text {
+  display: inline;
+}
+
+body.dark .section-sticker {
+  display: none;
+}
+
+body.light .sticker-background {
+  display: block;
 }
 
 .sticker-background {
@@ -48,4 +78,32 @@ body.light {
       linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)),
       url('../static/gridBGDarkPink.jpg') center center / cover no-repeat var(--background-color, #ffffff);
   }
+}
+
+
+.text-secondary {
+    color: var(--text-secondary-color) !important;
+}
+
+#theme-toggle:focus {
+    outline: 0;
+}
+
+#theme-toggle svg {
+    height: 18px;
+}
+
+button#theme-toggle {
+    border: none;
+    font-size: 26px;
+    margin: auto 4px;
+}
+
+body.dark #moon {
+    vertical-align: middle;
+    display: none;
+}
+
+body:not(.dark) #sun {
+    display: none;
 }

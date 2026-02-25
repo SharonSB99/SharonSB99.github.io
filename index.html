@@ -29,9 +29,9 @@
 <link href='https://fonts.googleapis.com/css?family=ADLaM Display' rel='stylesheet'>
 </head>
 
-<body class="light">
+<body>
 
-<!-- <script>
+<script>
     let localStorageValue = localStorage.getItem("pref-theme");
     let mediaQuery = window.matchMedia('(prefers-color-scheme: dark)').matches;
 
@@ -46,12 +46,12 @@
             break;
         default:
             if (mediaQuery) {
-                document.body.classList.remove('dark');
-                document.documentElement.classList.remove('dark');
+                document.body.classList.add('dark');
+                document.documentElement.classList.add('dark');
             }
             break;
     }
-</script> -->
+</script>
 <script>var prevScrollPos=window.pageYOffset;window.addEventListener("scroll",function(){let s=document.getElementById("profileHeader"),t=window.pageYOffset,n=!1,o=!0,i=o?prevScrollPos>t:t>0;i?s.classList.add("showHeaderOnTop"):n=!0,t===0&&(n=!0),n&&s.classList.remove("showHeaderOnTop"),prevScrollPos=t})</script>
 
 <div class="sticker-background"></div>
@@ -79,7 +79,28 @@
               <li class="nav-item navbar-text">
                 <a class="nav-link" href="/#projects" aria-label="projects">Projects</a>
               </li>
-              <li class="nav-item navbar-text"><a class="nav-link" href="/#contact" aria-label="contact">Contact</a></li>
+              <li class="nav-item navbar-text">
+                <a class="nav-link" href="/#contact" aria-label="contact">Contact</a>
+              </li>
+              <li class="nav-item navbar-text"><div class="text-center">
+                <button id="theme-toggle">
+                  <svg id="moon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"></path>
+                  </svg>
+                  <svg id="sun" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="12" cy="12" r="5"></circle>
+                    <line x1="12" y1="1" x2="12" y2="3"></line>
+                    <line x1="12" y1="21" x2="12" y2="23"></line>
+                    <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                    <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                    <line x1="1" y1="12" x2="3" y2="12"></line>
+                    <line x1="21" y1="12" x2="23" y2="12"></line>
+                    <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                    <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                  </svg>
+                </button>
+              </div>
+            </li>
           </ul>
       </div>
     </div>
@@ -134,7 +155,6 @@
     </section>
     <section id=about class="py-0 py-sm-5">
         <div class="container bg-transparent">
-            <!-- <h3 class="text-center bg-transparent">About Me</h3> -->
             <div class="container bg-transparent text-center">
                 <img src="static/stickers/AboutMe.png" class="img mx-auto" alt="About Me">
             </div>
@@ -173,7 +193,6 @@
         <div class="container bg-transparent">
             <div class="bg-transparent row justify-content-center px-3 py-5">
                 <div class="col-lg-8 col-sm-8 col-11 experience">
-                    <!-- <h3 class="text-center bg-transparent">Experience</h3> -->
                     <div class="container bg-transparent text-center">
                         <img src="static/stickers/Career.png" class="img mx-auto" alt="Career Experience">
                     </div>
@@ -299,7 +318,6 @@
     </section>
     <section id="projects" class="py-5">
         <div class="container bg-transparent">
-            <!-- <h3 class="text-center">Projects</h3> -->
              <div class="container bg-transparent text-center">
                 <img src="static/stickers/Projects.png" class="img mx-auto" alt="Projects">
             </div>
@@ -322,31 +340,26 @@
                         </div>  
                     </a>
                 </div>
-                <!-- TODO: re-enable when game gets released -->
-                <!-- <div class="col-lg-4 col-md-6 my-3">
-                    <button class="card my-3 h-100" title="Mark of the Beast" onclick="{
-                        window.location.href = '/posts/burbank'
-                    }">
+
+                <div class="col-lg-4 col-md-6 my-3">
+                    <a href="posts/burbank.html" class="card my-3 h-100" title="Mark of the Beast">
                         <div class="card-head">
-                            <img class="card-img-top" src="images/Burbank/BurbankCoverPhoto.png" alt="Project Burbank">
+                            <img class="card-img-top" src="static/BurbankCoverPhoto.png" alt="Mark of the Beast">
                         </div>
                         <div class="card-body bg-transparent p-3">
                             <div class="pb-2 bg-transparent">
                                 <span class="badge badge-secondary">NESMaker</span>
+                                <span class="badge badge-secondary">6502 Assembly</span>
                             </div>
                             <h3 class="card-title bg-transparent mt-1">Mark of the Beast</h3>
                             <div class="card-text bg-transparent secondary-font">
-                                <p>Todd Broadwater's NES emulated game released on steam: </p>
-                                <p>Two person project where I was the sole engineer for polish and bug fixes.</p>
+                                <p>Soon to be released NES game by Todd Broadwater</p>
                             </div>
-                        </div>
-                        <!-- <div class="card-footer py-3">
-                            <a href="/posts/burbank" class="float-end btn btn-outline-info btn-sm">Check it Out</a>
-                        </div> -->
-                    </button>
-                <!-- </div> -->
-            </div>
+                        </div>  
+                    </a>
+                </div>
             
+            </div>
         </div>
     </section>
 </div>
@@ -396,6 +409,18 @@
 
 </script>
 <script>
+     document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            document.documentElement.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            document.documentElement.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
     var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
     var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
         return new bootstrap.Tooltip(tooltipTriggerEl)
