@@ -18,7 +18,19 @@ html, body {
     padding: 0;
 }
 
-.section-text {
+body.light {
+  background-color: transparent;
+}
+
+body.light .sticker-background {
+  display: block;
+}
+
+body.light .banner {
+  display: inline;
+}
+
+.textBanner {
   display: none;
 }
 
@@ -29,29 +41,16 @@ body.dark {
   --primary-color: var(--primary-color-dark);
 }
 
-body.light {
-  background-color: transparent;
-}
-
-/* Dark mode: solid background, no stickers */
-body.dark {
-  background-color: var(--secondary-color-dark);
-}
-
 body.dark .sticker-background {
   display: none;
 }
 
-body.dark .section-text {
-  display: inline;
-}
-
-body.dark .section-sticker {
+body.dark .banner {
   display: none;
 }
 
-body.light .sticker-background {
-  display: block;
+body.dark .textBanner {
+  display: inline;
 }
 
 .sticker-background {
