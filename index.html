@@ -27,13 +27,13 @@
         --secondary-color: #f8f9fa;
 
          
-        --text-color-dark: #e4e6eb;
-        --text-secondary-color-dark: #b0b3b8;
+        --text-color-dark: #343a40;
+        --text-secondary-color-dark: #6c757d;
         --text-link-color-dark: #CD7161;
-        --background-color-dark: #18191a;
-        --secondary-background-color-dark: #212529;
-        --primary-color-dark: #ffffff;
-        --secondary-color-dark: #212529;
+        --background-color-dark: #eaedf0;
+        --secondary-background-color-dark: #64ffda1a;
+        --primary-color-dark: #CD7161;
+        --secondary-color-dark: #f8f9fa;
     }
     body {
         font-size: 1rem;
@@ -122,10 +122,10 @@
                 <a class="nav-link" href="/#about" aria-label="about">About Me</a>
               </li>
               <li class="nav-item navbar-text">
-                <a class="nav-link" href="/#experience" aria-label="experience">Experience</a>
+                <a class="nav-link" href="/#projects" aria-label="projects">Projects</a>
               </li>
               <li class="nav-item navbar-text">
-                <a class="nav-link" href="/#projects" aria-label="projects">Projects</a>
+                <a class="nav-link" href="/#experience" aria-label="experience">Experience</a>
               </li>
               <li class="nav-item navbar-text"><a class="nav-link" href="/#contact" aria-label="contact">Contact</a></li>
           </ul>
@@ -149,13 +149,13 @@
                         <div class="col-auto px-0 h-100">
                             <span>
                                 <span class=px-1>
-                                    <a href=https://github.com/SharonSB99 target=_blank class="btn social-icon">
-                                        <i class="fab fa-github"></i>
+                                    <a href=https://www.linkedin.com/in/sharon-bryant-022652157/ target=_blank class="btn social-icon">
+                                        <i class="fab fa-linkedin"></i>
                                     </a>
                                 </span>
                                 <span class=px-1>
-                                    <a href=https://www.linkedin.com/in/sharon-bryant-022652157/ target=_blank class="btn social-icon">
-                                        <i class="fab fa-linkedin"></i>
+                                    <a href=https://github.com/SharonSB99 target=_blank class="btn social-icon">
+                                        <i class="fab fa-github"></i>
                                     </a>
                                 </span>
                                 <span class=px-1>
@@ -214,11 +214,57 @@
             </div>
         </div>
     </section>
+    <section id="projects" class="py-5">
+        <div class="container">
+            <h3 class="text-center">Projects</h3>
+            <div class="row justify-content-center px-3 px-md-5">
+                <div class="col-lg-4 col-md-6 my-3">
+                    <a href="posts/burbank.html" class="card my-3 h-100" title="Project Burbank">
+                        <div class="card-head">
+                            <img class="card-img-top" src="static/BurbankProjectCover.png" alt="Project Burbank">
+                        </div>
+                        <div class="card-body bg-transparent p-3">
+                            <div class="pb-2 bg-transparent">
+                                <span class="badge badge-secondary">Unreal Engine 5</span>
+                                <span class="badge badge-secondary">C++</span>
+                                <span class="badge badge-secondary">Perforce</span>
+                            </div>
+                            <h3 class="card-title bg-transparent mt-1">Project Burbank</h3>
+                            <div class="card-text bg-transparent secondary-font">
+                                <p>Unreleased life sim game produced by Midsummer Studios.</p>
+                            </div>
+                        </div>  
+                    </a>
+                </div>
+                <div class="col-lg-4 col-md-6 my-3">
+                    <a class="card my-3 h-100" title="Mark of the Beast">
+                    <!-- <a href="posts/burbank.html" class="card my-3 h-100" title="Mark of the Beast"> -->
+                        <div class="card-head">
+                            <img class="card-img-top" src="static/TitleScreen.png" alt="Mark of the Beast">
+                        </div>
+                        <div class="card-body bg-transparent p-3">
+                            <div class="pb-2 bg-transparent">
+                                <span class="badge badge-secondary">NESMaker</span>
+                                <span class="badge badge-secondary">6502 Assembly</span>
+                            </div>
+                            <h3 class="card-title bg-transparent mt-1">Mark of the Beast</h3>
+                            <div class="card-text bg-transparent secondary-font">
+                                <p>Soon to be released on steam NES emulated game by Todd Broadwater.</p>
+                            </div>
+                        </div>  
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
     <section id="experience" class="py-2">
         <div class="container bg-transparent">
             <div class="bg-transparent row justify-content-center px-3 py-5">
                 <div class="col-lg-8 col-sm-8 col-11 experience">
                     <h3 class="text-center bg-transparent">Experience</h3>
+                    <span style="white-space: nowrap;">
+                        <p style="text-align: center;">⭐ Download my <a href="static/Bryant_Sharon_Resume.pdf" download>Resume</a> instead ⭐</p>
+                    </span>
                     <ul class="experience-chart"> 
                         <div style="display: flex; flex-direction: row; justify-content: flex-start; align-items: center;">
                             <div class="col-sm-12 col-md-8 col-lg-4 mb-5 mb-sm-0 mb-md-5 mb-lg-0 d-none d-sm-none d-md-block">
@@ -334,60 +380,16 @@
                             </div>
                         </li>
 
+                        
+                        
                     </ul>
                 </div>
             </div>
         </div>
+        
     </section>
-    <section id="projects" class="py-5">
-        <div class="container">
-            <h3 class="text-center">Projects</h3>
-            <div class="row justify-content-center px-3 px-md-5">
-                <div class="col-lg-4 col-md-6 my-3">
-                    <a href="posts/burbank.html" class="card my-3 h-100" title="Project Burbank">
-                        <div class="card-head">
-                            <img class="card-img-top" src="static/BurbankCoverPhoto.png" alt="Project Burbank">
-                        </div>
-                        <div class="card-body bg-transparent p-3">
-                            <div class="pb-2 bg-transparent">
-                                <span class="badge badge-secondary">Unreal Engine 5</span>
-                                <span class="badge badge-secondary">C++</span>
-                                <span class="badge badge-secondary">Perforce</span>
-                            </div>
-                            <h3 class="card-title bg-transparent mt-1">Project Burbank</h3>
-                            <div class="card-text bg-transparent secondary-font">
-                                <p>Unreleased life sim game produced by Midsummer Studios.</p>
-                            </div>
-                        </div>  
-                    </a>
-                </div>
-                <!-- TODO: re-enable when game gets released -->
-                <!-- <div class="col-lg-4 col-md-6 my-3">
-                    <button class="card my-3 h-100" title="Mark of the Beast" onclick="{
-                        window.location.href = '/posts/burbank'
-                    }">
-                        <div class="card-head">
-                            <img class="card-img-top" src="images/Burbank/BurbankCoverPhoto.png" alt="Project Burbank">
-                        </div>
-                        <div class="card-body bg-transparent p-3">
-                            <div class="pb-2 bg-transparent">
-                                <span class="badge badge-secondary">NESMaker</span>
-                            </div>
-                            <h3 class="card-title bg-transparent mt-1">Mark of the Beast</h3>
-                            <div class="card-text bg-transparent secondary-font">
-                                <p>Todd Broadwater's NES emulated game released on steam: </p>
-                                <p>Two person project where I was the sole engineer for polish and bug fixes.</p>
-                            </div>
-                        </div>
-                        <!-- <div class="card-footer py-3">
-                            <a href="/posts/burbank" class="float-end btn btn-outline-info btn-sm">Check it Out</a>
-                        </div> -->
-                    </button>
-                <!-- </div> -->
-            </div>
-            
-        </div>
-    </section>
+    
+    
 </div>
 
 <footer>
@@ -396,10 +398,10 @@
             <div class="col-md-4 text-center">
                 <ul style="list-style: none; margin: 0; padding: 50px; display: inline-flex">
                     <li style="padding-right: 15px">
-                        <a href="https://github.com/SharonSB" target="_blank" rel="noreferrer"><i class="fab fa-github footer-icon fa-3x" aria-label=""></i></a>
+                        <a href="https://www.linkedin.com/in/sharon-bryant-022652157/" target="_blank" rel="noreferrer"><i class="fab fa-linkedin footer-icon fa-3x" aria-label=""></i></a>
                     </li>
                     <li style="padding-right: 15px">
-                        <a href="https://www.linkedin.com/in/sharon-bryant-022652157/" target="_blank" rel="noreferrer"><i class="fab fa-linkedin footer-icon fa-3x" aria-label=""></i></a>
+                        <a href="https://github.com/SharonSB" target="_blank" rel="noreferrer"><i class="fab fa-github footer-icon fa-3x" aria-label=""></i></a>
                     </li>
                     <li style="padding-right: 15px">
                         <a href="mailto:sharon.suji.bryant@gmail.com" target="_blank" rel="noreferrer"><i class="fas fa-envelope footer-icon fa-3x" aria-label=""></i></a>
