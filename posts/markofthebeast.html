@@ -152,6 +152,35 @@
                     <strong>Video 2.</strong> Game with the original movement bugs. 
                 </figcaption>
             </div>
+
+            <!--Bank Swapping to save space-->
+            <h5>Oh No! No More Space :(</h5>
+            <p> Alright - so as I was making more changes to the game engine logic (since upgrading isn't an option right now), I ran into storage issues in Bank 14. A lot of the logic for movement, core behavior, etc is in Bank 14. Thanks to the 
+                 <a href="https://www.nesmakers.com/index.php?threads/more-space-for-code-with-bank-boomerangs.4907/">knowledge of people way better at Assembly than me</a>, I was able to implement on demand bank switching! Using the method @chronicleroflegends provided, we can store all our "Bank Boomerangs" into a collected library of them where 
+                each subroutine will load Bank 18 for more space, call your custom logic, and then return back to Bank 14. 
+            </p>
+
+            <p>Each subroutine does the bank loading and un-loading logic, so I can see a future improvement where this logic only happens once somehow (but I don't know 6502 Assembly like that so let me know). My understanding from what I've been reading online
+                is that these space issues are less of a problem in future engine iterations.
+            </p>
+
+            <div class="container text-center py-3">
+                <img class="img-fluid" src="../static/Bank14IsFull.png" alt="Data Bank Storage Status Image"/>
+                <figcaption><strong>Figure 1. As you can see, Bank 14 in particular is very full (an amazing 0KB remaining)</strong></figcaption>
+            </div>
+
+            <p>With the power of bank boomeranging, we can venture forth with more custom script changes!</p>
+
+            <h5>Textbox Helpers</h5>
+            <p> I had to implement custom logic to switch the player to their IDLE state when the textbox activates. It also prevents any input so you can't interrupt the NPCs. Potential improvements include: allowing NPC text interruption, preventing movement when the text is completed, kicking you out of crouching to stand idle. </p>
+            <div class="container text-center py-3">
+                <!-- <video class="img-fluid" controls>
+                    <source src="../static/MovementBugs.mp4" type="video/mp4">
+                </video> -->
+                <figcaption>
+                    <strong>Video 1.</strong> Video demonstrating before and after coming soon. 
+                </figcaption>
+            </div>
         </div>
     </div>
 </div>
